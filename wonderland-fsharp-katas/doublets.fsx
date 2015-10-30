@@ -1,12 +1,12 @@
 ﻿open System.IO
 
-let wordsPath = Path.Combine [|__SOURCE_DIRECTORY__; "resources/words.txt"|]
+let wordsPath = Path.Combine (__SOURCE_DIRECTORY__,"resources","words.txt")
 let words = File.ReadAllLines wordsPath
 
 type Word = string
 let doublets (w1:Word,w2:Word) = [ "make me work" ]
 
-#r @"packages\Unquote\lib\net45\Unquote.dll"
+#r @"packages/Unquote/lib/net45/Unquote.dll"
 open Swensen.Unquote
 
 let tests () =
