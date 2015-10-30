@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="alphabet-cipher.fsx" />
+    <None Include="doublets.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
