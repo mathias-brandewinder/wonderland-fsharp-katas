@@ -6,7 +6,7 @@ let words = File.ReadAllLines wordsPath
 type Word = string
 let doublets (w1:Word,w2:Word) = [ "make me work" ]
 
-#r @"packages/Unquote/lib/net45/Unquote.dll"
+#r @"../packages/Unquote/lib/net45/Unquote.dll"
 open Swensen.Unquote
 
 let tests () =
