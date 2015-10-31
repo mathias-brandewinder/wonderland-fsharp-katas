@@ -75,7 +75,7 @@ To decode, the person would use the secret keyword and do the opposite.
 
 - Clone or fork this repo
 - `cd .paket`, run `paket.bootstrapper.exe` to install dependencies
-- `cd .wonderland-fsharp-katas`, open `alphabet-cipher.fsx` in your editor of choice
+- `cd .wonderland-fsharp-katas`, open [`alphabet-cipher.fsx`](alphabet-cipher.fsx) in your editor of choice
 - Select and execute the whole code
 - Make the tests pass!
 
