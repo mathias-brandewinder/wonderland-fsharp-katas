@@ -1,55 +1,92 @@
-﻿type Passenger =
-    | Fox
-    | Goose
-    | Corn
-    | You
+﻿type Location =
+    | LeftBank
+    | RightBank
+    | Boat
 
-type World = { 
-    LeftBank  : Passenger Set
-    RightBank : Passenger Set
-    Boat      : Passenger Set }
+type Positions = {
+    Fox:    Location
+    Goose:  Location
+    Corn:   Location
+    You:    Location }
 
-let Start = { 
-    LeftBank = set []
-    RightBank = set []
-    Boat = set [] }
+let Start = {
+    Fox =   LeftBank
+    Goose = LeftBank
+    Corn =  LeftBank
+    You =   LeftBank }
 
-let riverCrossingPlan () : World list = failwith "Implement me!"         
+let riverCrossingPlan () : Positions list = 
+    //failwith "Implement me!"
 
 
 #r @"../packages/Unquote/lib/net45/Unquote.dll"
 open Swensen.Unquote
 
+let invalidTransitions =
+    [
+        LeftBank,RightBank
+        RightBank,LeftBank
+    ]
+
+let isValidTransition transition =
+    invalidTransitions 
+    |> Seq.exists ((=) transition)
+    |> not
+
+
 let tests () =
 
     let plan = riverCrossingPlan ()
+    let everyone positions = 
+        [ positions.You; positions.Fox; positions.Goose; positions.Corn ]
 
-    // TODO: add validation of moves
-    let validMove (before:World,after:World) = true
-
+    // TODO: check that things move with you 
+    // and not on their own?
+    let validMove (before:Positions,after:Positions) =
+        (everyone before, everyone after)
+        ||> List.zip
+        |> Seq.forall (isValidTransition)
+        
     // "you begin with the fox, goose and corn on one side of the river"
-    test <@ plan.Head = { LeftBank = set [ You; Fox; Goose; Corn ] ; RightBank = Set.empty; Boat = Set.empty } @>
+    test <@ plan.Head = Start @>
 
-    // "you end with the fox, goose and corn on one side of the river"
+    // "you end with the fox, goose and corn on the other side of the river"
     let final = plan |> Seq.last
-    test <@ final = { LeftBank = Set.empty ; RightBank = set [ You; Fox; Goose; Corn ]; Boat = Set.empty } @>
+    test <@ final = { Fox = RightBank ; Goose = RightBank; Corn = RightBank; You = RightBank } @>
 
     // "things are safe"
 
-    let left w (x,y) = w.LeftBank.Contains x && w.LeftBank.Contains y
-    let right w (x,y) = w.RightBank.Contains x && w.RightBank.Contains y
-    let boat w = w.Boat.Count = 1 || (w.Boat.Count = 2 && w.Boat.Contains You)
+    let gooseIsSafe positions = 
+        (positions.Goose <> positions.Fox)
+        || (positions.Goose = positions.You)
+
+    let cornIsSafe positions = 
+        (positions.Corn <> positions.Goose)
+        || (positions.Corn = positions.You)
+
+    let boatIsValid positions = 
+        let notYouOnBoat =
+            [   positions.Goose = Boat 
+                positions.Fox = Boat
+                positions.Corn = Boat ]
+            |> Seq.filter id
+            |> Seq.length
+            
+        match positions.You with
+        | Boat -> notYouOnBoat < 2
+        | _ -> notYouOnBoat = 0
 
     plan
-    |> List.iter (fun world ->
-        let l = left world
-        let r = right world
+    |> List.iter (fun current ->
+        
         // "the fox and the goose should never be left alone together"
-        test <@ l (Fox,Goose) || r (Fox,Goose) |> not @>                
+        test <@ gooseIsSafe current @>
+        
         // "the goose and the corn should never be left alone together"
-        test <@ l (Goose,Corn) || r (Goose,Corn) |> not @>
+        test <@ cornIsSafe current @>
+
         // "The boat can carry only you plus one other"
-        test <@ boat world @>)
+        test <@ boatIsValid current @>)
 
     // move is possible
     plan
