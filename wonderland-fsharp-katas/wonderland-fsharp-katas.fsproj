@@ -47,6 +47,7 @@
     <None Include="wonderland-number.fsx" />
     <None Include="card-game-war.fsx" />
     <None Include="fox-goose-bag-of-corn.fsx" />
+    <None Include="magic-square.fsx" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
