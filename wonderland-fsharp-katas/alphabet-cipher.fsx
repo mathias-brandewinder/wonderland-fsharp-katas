@@ -3,9 +3,14 @@
 type Message = string
 type Keyword = string
 
-let encode (key:Keyword) (message:Message) = "encodeme" : Message
-let decode (key:Keyword) (message:Message) = "decodeme" : Message
-let decipher (cipher:Message) (message:Message) = "decypherme" : Keyword
+let encode (key:Keyword) (message:Message) : Message = 
+    "encodeme" 
+
+let decode (key:Keyword) (message:Message) : Message = 
+    "decodeme" 
+
+let decipher (cipher:Message) (message:Message) : Keyword = 
+    "decypherme"
 
 #r @"../packages/Unquote/lib/net45/Unquote.dll"
 open Swensen.Unquote
