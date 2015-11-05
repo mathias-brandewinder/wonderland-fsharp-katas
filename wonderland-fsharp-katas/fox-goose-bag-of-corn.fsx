@@ -15,8 +15,18 @@ let Start = {
     Corn =  LeftBank
     You =   LeftBank }
 
+let Final = {
+    Fox =   RightBank
+    Goose = RightBank
+    Corn =  RightBank
+    You =   RightBank }
+
 let riverCrossingPlan () : Positions list = 
-    failwith "Implement me!"
+    [ 
+        Start
+        // do something here!
+        Final
+    ]
 
 
 #r @"../packages/Unquote/lib/net45/Unquote.dll"
