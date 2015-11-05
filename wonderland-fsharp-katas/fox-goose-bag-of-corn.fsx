@@ -16,7 +16,7 @@ let Start = {
     You =   LeftBank }
 
 let riverCrossingPlan () : Positions list = 
-    //failwith "Implement me!"
+    failwith "Implement me!"
 
 
 #r @"../packages/Unquote/lib/net45/Unquote.dll"
