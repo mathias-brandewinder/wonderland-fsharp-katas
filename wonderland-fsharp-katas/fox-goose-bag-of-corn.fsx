@@ -1,4 +1,6 @@
-﻿type Location =
+// See the file fox-goose-bag-of-corn.md for detailed information.
+
+type Location =
     | LeftBank
     | RightBank
     | Boat
@@ -21,8 +23,8 @@ let Final = {
     Corn =  RightBank
     You =   RightBank }
 
-let riverCrossingPlan () : Positions list = 
-    [ 
+let riverCrossingPlan () : Positions list =
+    [
         Start
         // do something here!
         Final
@@ -39,7 +41,7 @@ let invalidTransitions =
     ]
 
 let isValidTransition transition =
-    invalidTransitions 
+    invalidTransitions
     |> Seq.exists ((=) transition)
     |> not
 
@@ -47,16 +49,16 @@ let isValidTransition transition =
 let tests () =
 
     let plan = riverCrossingPlan ()
-    let everyone positions = 
+    let everyone positions =
         [ positions.You; positions.Fox; positions.Goose; positions.Corn ]
 
-    // TODO: check that things move with you 
+    // TODO: check that things move with you
     // and not on their own?
     let validMove (before:Positions,after:Positions) =
         (everyone before, everyone after)
         ||> List.zip
         |> Seq.forall (isValidTransition)
-        
+
     // "you begin with the fox, goose and corn on one side of the river"
     test <@ plan.Head = Start @>
 
@@ -66,32 +68,32 @@ let tests () =
 
     // "things are safe"
 
-    let gooseIsSafe positions = 
+    let gooseIsSafe positions =
         (positions.Goose <> positions.Fox)
         || (positions.Goose = positions.You)
 
-    let cornIsSafe positions = 
+    let cornIsSafe positions =
         (positions.Corn <> positions.Goose)
         || (positions.Corn = positions.You)
 
-    let boatIsValid positions = 
+    let boatIsValid positions =
         let notYouOnBoat =
-            [   positions.Goose = Boat 
+            [   positions.Goose = Boat
                 positions.Fox = Boat
                 positions.Corn = Boat ]
             |> Seq.filter id
             |> Seq.length
-            
+
         match positions.You with
         | Boat -> notYouOnBoat < 2
         | _ -> notYouOnBoat = 0
 
     plan
     |> List.iter (fun current ->
-        
+
         // "the fox and the goose should never be left alone together"
         test <@ gooseIsSafe current @>
-        
+
         // "the goose and the corn should never be left alone together"
         test <@ cornIsSafe current @>
 

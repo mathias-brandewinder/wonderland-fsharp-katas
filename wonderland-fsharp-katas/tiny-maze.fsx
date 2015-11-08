@@ -1,4 +1,6 @@
-﻿type Cell =
+// See the file tiny-maze.md for detailed information.
+
+type Cell =
     | Start
     | Exit
     | Empty
@@ -6,13 +8,13 @@
 
 type Maze = Cell [,]
 
-type Path = 
-    | X 
+type Path =
+    | X
     | O
 
 type Solution = Path [,]
-    
-let solve (maze:Maze) : Solution = 
+
+let solve (maze:Maze) : Solution =
     failwith "boom"
 
 
@@ -22,7 +24,7 @@ open Swensen.Unquote
 let tests () =
 
     // sample 3x3 maze
-    let maze3x3 = 
+    let maze3x3 =
         [ [Start; Empty; Wall]
           [Wall;  Empty; Wall]
           [Wall;  Empty; Exit]]
@@ -37,7 +39,7 @@ let tests () =
 
     test <@ solution3x3 = solve maze3x3 @>
 
-    // sample 4x4 maze 
+    // sample 4x4 maze
     let maze4x4 =
          [[Start; Empty; Empty; Wall ]
           [Wall;  Wall;  Empty; Empty]

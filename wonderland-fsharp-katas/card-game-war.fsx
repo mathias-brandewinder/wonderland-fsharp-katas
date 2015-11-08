@@ -1,6 +1,8 @@
-﻿// feel free to use these cards or use your own data structure
+// See the file card-game.md for detailed information.
 
-type Suit = 
+// feel free to use these cards or use your own data structure
+
+type Suit =
     | Spade
     | Club
     | Diamond
@@ -15,17 +17,17 @@ type Rank =
 
 type Card = Suit * Rank
 
-let playRound (card1:Card,card2:Card) = 
+let playRound (card1:Card,card2:Card) =
     failwith "not implemented: winning card"
 
-let playGame (hand1:Card list, hand2:Card list) = 
+let playGame (hand1:Card list, hand2:Card list) =
     failwith "not implemented: game winner"
 
 (*
 let suits = [ Spade; Club; Diamond; Heart ]
 let heads = [ Jack; Queen; King; Ace ]
 
-let ranks = 
+let ranks =
     [   for v in 2 .. 10 -> Value v
         for head in heads -> head
     ]
@@ -37,7 +39,7 @@ let deck = seq {
 
 // fill in tests for your game
 let tests () =
-    
+
     // playRound
     printfn "TODO: the highest rank wins the cards in the round"
     printfn "TODO: queens are higher rank than jacks"
@@ -46,7 +48,7 @@ let tests () =
     printfn "TODO: if the ranks are equal, clubs beat spades"
     printfn "TODO: if the ranks are equal, diamonds beat clubs"
     printfn "TODO: if the ranks are equal, hearts beat diamonds"
-    
+
     // playGame
     printfn "TODO: the player loses when they run out of cards"
 

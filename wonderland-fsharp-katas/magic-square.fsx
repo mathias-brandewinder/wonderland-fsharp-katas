@@ -1,4 +1,6 @@
-﻿let values = [| 1.0 .. 0.5 .. 5.0 |]
+// See the file magic-square.md for detailed information.
+
+let values = [| 1.0 .. 0.5 .. 5.0 |]
 
 type Square = float[,]
 
@@ -6,7 +8,7 @@ let dim = 3
 
 let magicSquare () =
     // fix this so that the tests pass!
-    let square = Array2D.init dim dim (fun row col -> 
+    let square = Array2D.init dim dim (fun row col ->
         values.[row * dim + col])
     square
 
@@ -20,10 +22,10 @@ let indexes = [ 0 .. maxIndex ]
 let row (sq:Square) i = [ for col in indexes -> sq.[i,col] ]
 let col (sq:Square) i = [ for row in indexes -> sq.[row,i] ]
 
-let sumRow (sq:Square) row = 
+let sumRow (sq:Square) row =
     [ for col in indexes -> sq.[row,col] ] |> List.sum
 
-let sumColumn (sq:Square) col = 
+let sumColumn (sq:Square) col =
     [ for row in indexes -> sq.[row,col] ] |> List.sum
 
 let sumDownDiagonal (sq:Square) =
@@ -34,7 +36,7 @@ let sumUpDiagonal (sq:Square) =
 
 
 let tests () =
-    
+
     let magic = magicSquare ()
 
     // all the rows sum to the same number
