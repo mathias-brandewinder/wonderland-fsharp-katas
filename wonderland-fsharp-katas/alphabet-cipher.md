@@ -83,6 +83,7 @@ To decode, the person would use the secret keyword and do the opposite.
 
 Once you have your kata solution, you are welcome to submit a link to your repo to share here in this section with others.
 
+* https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx (includes decypher solution)
 
 
 If you haven't solved your kata yet - Don't Peek!
