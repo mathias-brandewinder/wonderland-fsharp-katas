@@ -33,7 +33,7 @@ You need to arrange them in a 3 x 3 matrix so that:
 ## Instructions
 
 - Clone or fork this repo
-- `cd .paket`, run `paket.bootstrapper.exe` to install dependencies
+- `cd .paket`, run first `paket.bootstrapper.exe`, then `paket.exe install` to install the dependencies
 - `cd .wonderland-fsharp-katas`, open [`magic-square.fsx`](magic-square.fsx) in your editor of choice
 - Select and execute the whole code
 - Make the tests pass!

@@ -19,7 +19,7 @@ You must find a way to generate this wonderland number.
 ## Instructions
 
 - Clone or fork this repo
-- `cd .paket`, run `paket.bootstrapper.exe` to install dependencies
+- `cd .paket`, run first `paket.bootstrapper.exe`, then `paket.exe install` to install the dependencies
 - `cd .wonderland-fsharp-katas`, open [`wonderland-number.fsx`](wonderland-number.fsx) in your editor of choice
 - Select and execute the whole code
 - Make the tests pass!

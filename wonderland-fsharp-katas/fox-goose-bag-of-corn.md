@@ -48,7 +48,7 @@ let Final = {
 ## Instructions
 
 - Clone or fork this repo
-- `cd .paket`, run `paket.bootstrapper.exe` to install dependencies
+- `cd .paket`, run first `paket.bootstrapper.exe`, then `paket.exe install` to install the dependencies
 - `cd .wonderland-fsharp-katas`, open [`fox-goose-bag-of-corn.fsx`](fox-goose-bag-of-corn.fsx) in your editor of choice
 - Select and execute the whole code
 - Make the tests pass!

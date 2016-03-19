@@ -26,7 +26,7 @@ The rules of this card game are quite simple.
 ## Instructions
 
 - Clone or fork this repo
-- `cd .paket`, run `paket.bootstrapper.exe` to install dependencies
+- `cd .paket`, run first `paket.bootstrapper.exe`, then `paket.exe install` to install the dependencies
 - `cd .wonderland-fsharp-katas`, open [`card-game-war.fsx`](card-game-war.fsx) in your editor of choice
 - Select and execute the whole code
 - In this kata, you will be prompted to fill in your own tests.
