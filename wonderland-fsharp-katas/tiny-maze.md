@@ -43,7 +43,7 @@ Once you have your kata solution, you are welcome to submit a link to your repo 
 
 If you haven't solved your kata yet - Don't Peek!
 
-* https://github.com/epeicher/wonderland-fsharp-katas/edit/master/wonderland-fsharp-katas/tiny-maze.md
+* https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/tiny-maze.fsx
 
 ## License
 
