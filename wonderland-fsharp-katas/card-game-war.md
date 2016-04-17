@@ -40,6 +40,7 @@ Once you have your kata solution, you are welcome to submit a link to your repo 
 If you haven't solved your kata yet - Don't Peek!
 
 * https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/card-game-war.fsx
+* https://github.com/strmpnk/wonderland-fsharp-katas/blob/solutions/wonderland-fsharp-katas/card-game-war.fsx
 
 ## License
 
