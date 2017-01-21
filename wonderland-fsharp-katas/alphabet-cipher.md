@@ -83,15 +83,10 @@ To decode, the person would use the secret keyword and do the opposite.
 
 Once you have your kata solution, you are welcome to submit a link to your repo to share here in this section with others.
 
-<<<<<<< HEAD
 * https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
 * https://github.com/strmpnk/wonderland-fsharp-katas/blob/solutions/wonderland-fsharp-katas/alphabet-cipher.fsx
 * https://github.com/htoma/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
-=======
-* [https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx](https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx)
-* [https://github.com/strmpnk/wonderland-fsharp-katas/blob/solutions/wonderland-fsharp-katas/alphabet-cipher.fsx](https://github.com/strmpnk/wonderland-fsharp-katas/blob/solutions/wonderland-fsharp-katas/alphabet-cipher.fsx)
 * [https://github.com/prof79/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx](https://github.com/prof79/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx)
->>>>>>> fc15df1dcb3ec6cca1eb2d81cce4c97ddcc2815f
 
 If you haven't solved your kata yet - Don't Peek!
 
