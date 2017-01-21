@@ -6,7 +6,7 @@ _Ported from [@gigasquid](https://twitter.com/gigasquid)'s
 Alice found herself very tiny and wandering around Wonderland.  Even
 the grass around her seemed like a maze.
 
-![alice tiny](/images/alicetiny.gif)
+![alice tiny](../images/alicetiny.gif)
 
 This is a tiny maze solver.
 

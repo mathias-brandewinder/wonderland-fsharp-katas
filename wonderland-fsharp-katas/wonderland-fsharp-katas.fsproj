@@ -49,6 +49,13 @@
     <None Include="fox-goose-bag-of-corn.fsx" />
     <None Include="magic-square.fsx" />
     <None Include="tiny-maze.fsx" />
+    <None Include="alphabet-cipher.md" />
+    <None Include="card-game-war.md" />
+    <None Include="doublets.md" />
+    <None Include="fox-goose-bag-of-corn.md" />
+    <None Include="magic-square.md" />
+    <None Include="tiny-maze.md" />
+    <None Include="wonderland-number.md" />
   </ItemGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
@@ -83,7 +90,7 @@
         </Reference>
       </ItemGroup>
     </When>
-    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6')">
+    <When Condition="$(TargetFrameworkIdentifier) == '.NETFramework' And ($(TargetFrameworkVersion) == 'v4.5' Or $(TargetFrameworkVersion) == 'v4.5.1' Or $(TargetFrameworkVersion) == 'v4.5.2' Or $(TargetFrameworkVersion) == 'v4.5.3' Or $(TargetFrameworkVersion) == 'v4.6' Or $(TargetFrameworkVersion) == 'v4.6.1' Or $(TargetFrameworkVersion) == 'v4.6.2')">
       <ItemGroup>
         <Reference Include="Unquote">
           <HintPath>..\packages\Unquote\lib\net45\Unquote.dll</HintPath>

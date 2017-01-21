@@ -6,7 +6,7 @@ _Ported from [@gigasquid](https://twitter.com/gigasquid)'s
 Lewis Carroll published a cipher known as
 [The Alphabet Cipher](http://en.wikipedia.org/wiki/The_Alphabet_Cipher)
 
-![Letter](/images/fishfrogletter.gif)
+![Letter](../images/fishfrogletter.gif)
 
 This Alphabet Cipher involves alphabet substitution using a keyword.
 
@@ -86,6 +86,7 @@ Once you have your kata solution, you are welcome to submit a link to your repo 
 * https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
 * https://github.com/strmpnk/wonderland-fsharp-katas/blob/solutions/wonderland-fsharp-katas/alphabet-cipher.fsx
 * https://github.com/htoma/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
+* https://github.com/prof79/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
 * https://github.com/nestordemeure/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
 
 If you haven't solved your kata yet - Don't Peek!
