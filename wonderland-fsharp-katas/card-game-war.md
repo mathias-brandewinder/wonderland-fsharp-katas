@@ -5,7 +5,7 @@ _Ported from [@gigasquid](https://twitter.com/gigasquid)'s
 
 This kata is a version of the classic card game [War](http://en.wikipedia.org/wiki/War_%28card_game%29).
 
-![Cards Painting](/images/cardspainting.gif)
+![Cards Painting](../images/cardspainting.gif)
 
 
 The rules of this card game are quite simple.
