@@ -86,7 +86,8 @@ Once you have your kata solution, you are welcome to submit a link to your repo 
 * https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
 * https://github.com/strmpnk/wonderland-fsharp-katas/blob/solutions/wonderland-fsharp-katas/alphabet-cipher.fsx
 * https://github.com/htoma/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
-* [https://github.com/prof79/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx](https://github.com/prof79/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx)
+* https://github.com/prof79/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
+* https://github.com/nestordemeure/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/alphabet-cipher.fsx
 
 If you haven't solved your kata yet - Don't Peek!
 

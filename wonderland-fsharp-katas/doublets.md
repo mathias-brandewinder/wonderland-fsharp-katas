@@ -82,6 +82,7 @@ If you haven't solved your kata yet - Don't Peek!
 
 * https://github.com/epeicher/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/doublets.fsx
 * https://github.com/htoma/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/doublets.fsx
+* https://github.com/nestordemeure/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/doublets.fsx
 
 ## License
 

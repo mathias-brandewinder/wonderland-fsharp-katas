@@ -59,6 +59,8 @@ Once you have your kata solution, you are welcome to submit a link to your repo 
 
 If you haven't solved your kata yet - Don't Peek!
 
+* https://github.com/nestordemeure/wonderland-fsharp-katas/blob/master/wonderland-fsharp-katas/fox-goose-bag-of-corn.fsx
+
 ## License
 
 Copyright (c) 2015 Mathias Brandewinder / MIT License.
